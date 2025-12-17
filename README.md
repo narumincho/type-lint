@@ -1,7 +1,11 @@
 # deno-type-lint
 
+Deno lint plugin
+
+## type-lint/no-array-shorthand
+
 ```ts
-function removeEmptyStringInArray(array: readonly string[]): readonly string[] {
+function removeEmptyStringInArray(array: readonly string[]): string[] {
   return array.filter((item) => item !== "");
 }
 ```
@@ -9,9 +13,7 @@ function removeEmptyStringInArray(array: readonly string[]): readonly string[] {
 ↓
 
 ```ts
-function removeEmptyStringInArray(
-  array: ReadonlyArray<string>,
-): ReadonlyArray<string> {
+function removeEmptyStringInArray(array: ReadonlyArray<string>): Array<string> {
   return array.filter((item) => item !== "");
 }
 ```

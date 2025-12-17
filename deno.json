@@ -1,4 +1,8 @@
 {
+  "name": "@narumincho/type-lint",
+  "exports": {
+    ".": "./mod.ts"
+  },
   "lint": {
     "plugins": ["./mod.ts"]
   },

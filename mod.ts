@@ -1,5 +1,5 @@
 const plugin: Deno.lint.Plugin = {
-  name: "my-plugin",
+  name: "type-lint",
   rules: {
     "no-array-shorthand": {
       create(context) {
